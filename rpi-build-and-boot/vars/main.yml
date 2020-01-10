@@ -1,0 +1,53 @@
+---
+
+of_version: of_v0.9.0_linuxarmv7l_release
+image: ./2019-09-26-raspbian-buster-lite.img
+offset_boot: 4194304
+offset_root: 272629760
+pi_os_root: /opt/raspberrypi
+
+rpi_apt:
+  - build-essential
+  - pkg-config
+  - git
+  - python-pip
+  - python-dev
+  - unzip
+  - gawk
+  - libudev-dev
+  - sshpass
+
+rpi_pip:
+  - ansible
+  - paramiko
+  - PyYAML
+  - jinja2
+  - httplib2
+
+rpi_file_link:
+  - "{ src: 'libanl.so.1', dest: 'libanl.so' }"
+  - "{ src: 'libBrokenLocale.so.1', dest: 'libBrokenLocale.so' }"
+  - "{ src: 'libcidn.so.1', dest: 'libcidn.so' }"
+  - "{ src: 'libcrypt.so.1', dest: 'libcrypt.so' }"
+  - "{ src: 'libdbus-1.so.3.8.13', dest: 'libdbus-1.so' }"
+  - "{ src: 'libdl.so.2', dest: 'libdl.so' }"
+  - "{ src: 'libexpat.so.1.6.0', dest: 'libexpat.so' }"
+  - "{ src: 'libglib-2.0.so.0', dest: 'libglib-2.0.so' }"
+  - "{ src: 'liblzma.so.5.0.0', dest: 'liblzma.so' }"
+  - "{ src: 'libm.so.6', dest: 'libm.so' }"
+  - "{ src: 'libnsl.so.1', dest: 'libnsl.so' }"
+  - "{ src: 'libnss_compat.so.2', dest: 'libnss_compat.so' }"
+  - "{ src: 'libnss_dns.so.2', dest: 'libnss_dns.so' }"
+  - "{ src: 'libnss_files.so.2', dest: 'libnss_files.so' }"
+  - "{ src: 'libnss_hesiod.so.2', dest: 'libnss_hesiod.so' }"
+  - "{ src: 'libnss_nisplus.so.2', dest: 'libnss_nisplus.so' }"
+  - "{ src: 'libnss_nis.so.2', dest: 'libnss_nis.so' }"
+  - "{ src: 'libpcre.so.3', dest: 'libpcre.so' }"
+  - "{ src: 'libpng12.so.0', dest: 'libpng12.so.0' }"
+  - "{ src: 'libresolv.so.2', dest: 'libresolv.so' }"
+  - "{ src: 'libthread_db.so.1', dest: 'libthread_db.so' }"
+  - "{ src: 'libusb-0.1.so.4, dest: 'libusb-0.1.so.4' }"
+  - "{ src: 'libusb-1.0.so.0.1.0', dest: 'libusb-1.0.so' }"
+  - "{ src: 'libutil.so.1', dest: 'libutil.so' }"
+  - "{ src: 'libz.so.1.2.8', dest: 'libz.so' }"
+  - "{ src: 'libudev.so.1.5.0', dest: 'libudev.so' }"
