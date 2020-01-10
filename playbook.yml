@@ -6,4 +6,5 @@
 
   tasks:
     - name: Run rpi-build-and-boot
-      import_role: ./rpi-build-and-boot
+      import_role:
+        name: ./rpi-build-and-boot
