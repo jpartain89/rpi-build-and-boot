@@ -50,7 +50,8 @@
   loop: "{{ rpi_apt | flatten(levels=1) }}"
 
 - name: Upgrade pip
-  command: 'pip3 install -U pip'
+  command: 'pip3 install -U pip 2>/dev/null'
+  failed_when: false
 
 - name: Pip Package Installation
   pip:
