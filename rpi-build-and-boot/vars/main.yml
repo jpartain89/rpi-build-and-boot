@@ -21,6 +21,7 @@ rpi_apt:
   - sshpass
 
 rpi_pip:
+  - setuptools
   - ansible
   - paramiko
 
