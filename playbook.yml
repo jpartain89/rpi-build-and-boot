@@ -58,7 +58,7 @@
       apt:
         name: "{{ item }}"
         state: latest
-      items:
+      with_items:
         - build-essential
         - pkg-config
         - git
