@@ -10,11 +10,11 @@ rpi_apt:
   - build-essential
   - pkg-config
   - git
-  - python3-pip
-  - python3-dev
-  - python3-yaml
-  - python3-jinja2
-  - python3-httplib2
+  - python3.5-pip
+  - python3.5-dev
+  - python3.5-yaml
+  - python3.5-jinja2
+  - python3.5-httplib2
   - unzip
   - gawk
   - libudev-dev
