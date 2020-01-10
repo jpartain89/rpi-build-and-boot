@@ -50,12 +50,13 @@
   loop: "{{ rpi_apt | flatten(levels=1) }}"
 
 - name: Upgrade pip
-  command: 'pip install -U pip'
+  command: 'pip3 install -U pip'
 
 - name: Pip Package Installation
   pip:
     name: "{{ item }}"
     state: latest
+    executable: pip3
   loop: "{{ rpi_pip | flatten(levels=1) }}"
 
 - name: Install tinyproxy

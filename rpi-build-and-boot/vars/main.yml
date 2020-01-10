@@ -15,7 +15,6 @@ rpi_apt:
   - python3-yaml
   - python3-jinja2
   - python3-httplib2
-  - python3-paramiko
   - unzip
   - gawk
   - libudev-dev
@@ -23,6 +22,7 @@ rpi_apt:
 
 rpi_pip:
   - ansible
+  - paramiko
 
 rpi_file_link:
   - "{ src: 'libanl.so.1', dest: 'libanl.so' }"
